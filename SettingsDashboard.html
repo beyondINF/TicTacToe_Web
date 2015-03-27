@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="title">My first web page</title>
+    <link rel="stylesheet" href="SettingsDashboard.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+
+    $( document ).ready(function() {
+        $("#ConSrv").addClass('active');
+		$("#LogsBlade").hide();
+    });
+    </script>
+</head>
+    <body>        
+        <h1 class="intro"> Overview > Settings</h1>	
+	    <div class="basic-blade bladesize-medium" style="display:table-cell; border:1px solid black" id="GetStart">                
+             <div class="blade-title">Getting Started</div>
+             <div id="Items">Connect Sources</div>
+             <div id="Items">Add Logs</div>                         
+        </div>
+		
+		<div style="display:table-cell; border:1px solid black">
+		<div class="basic-settingstab">
+	        <div class="basic-settingsitem" id="ConSrv">CONNECTED SERVERS</div>
+	        <div class="basic-settingsitem" id="Logs">LOGS</div>
+	        <div class="basic-settingsitem" id="Acc">ACCOUNTS</div>
+        </div>
+		
+           
+        <div class="basic-blade bladesize-medium" id="ConSrvBlade">                
+             <div class="blade-title">Add Server</div>
+             <div>Connect Sources</div>
+             <div>Connect Sources</div>                         
+        </div>
+
+        <div class="basic-blade bladesize-medium" id="LogsBlade">                
+             <div class="blade-title">Logs</div>
+             <div>Log 1</div>
+             <div>Log 2</div>                         
+        </div>
+		
+		        <div class="basic-blade bladesize-medium" id="LogsBlade1">                
+             <div class="blade-title">Logs</div>
+             <div>Log 1</div>
+             <div>Log 2</div>                         
+        </div>
+		
+		        <div class="basic-blade bladesize-medium" id="LogsBlade2">                
+             <div class="blade-title">Logs</div>
+             <div>Log 1</div>
+             <div>Log 2</div>                         
+        </div>
+		
+		        <div class="basic-blade bladesize-medium" id="LogsBlade3">                
+             <div class="blade-title">Logs</div>
+             <div>Log 1</div>
+             <div>Log 2</div>                         
+        </div>
+
+		</div>
+
+        <script>
+            $("#Logs").click(function () {
+                $("#Logs").addClass('active');
+                $("#ConSrv").removeClass('active');   
+				$("#ConSrvBlade").hide();
+				$("#LogsBlade").show();
+            })
+
+            $("#ConSrv").click(function () {
+                $("#Logs").removeClass('active');
+                $("#ConSrv").addClass('active');
+				$("#LogsBlade").hide();
+				$("#ConSrvBlade").show();				
+            })
+
+            $("#GetStart").click(function(){
+                $("#GetStart").animate({width:'20px'},200);     
+                $("div").remove("#Items");                
+            })
+
+        </script>
+    </body>
+</html>

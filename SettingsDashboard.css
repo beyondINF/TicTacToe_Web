@@ -1,0 +1,55 @@
+.intro {
+    font-weight:bold;;
+}
+
+
+.basic-blade {
+    display: table-cell;         
+    background: #f2f2f2;
+    float: left;
+    margin-right: 20px;   
+}
+
+.basic-blade-content {   
+    margin: 0px 10px 5px 0px;
+    border: 1px solid black;
+}
+
+.basic-blade div.blade-title {    
+    margin-bottom: 8px;    
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #0094ff;
+    color: White;
+    text-transform: uppercase;        
+    height: 30px;
+}
+
+.basic-tile {
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2; 
+    color: #595959; 
+    padding: 5px;
+    position: relative;
+}
+
+.bladesize-medium.basic-blade {
+
+}
+
+.basic-settingstab {
+	height: 30px;
+	margin-bottom: 10px;
+	border:1px solid black;
+}
+
+.basic-settingsitem{
+	margin-right: 30px;
+	float: left;
+}
+
+.active {
+   font-weight:bold;
+   text-decoration: underline;
+}
+
